@@ -1,0 +1,494 @@
+html {
+  width: auto;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+#index-link {
+  display: none;
+}
+.header {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.95em;
+  position: relative;
+}
+form.login {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.2em;
+  padding: 1em;
+}
+form.login input[type="text"],
+form.login input[type="password"] {
+  margin-left: 1em;
+  background-color: #ffffff;
+}
+#user-container {
+  background: none repeat scroll 0 0 #FFFFFF;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 10;
+}
+.user-body {
+  display: none;
+  padding: 2em 0 0 0.5em;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  box-shadow: 2px 5px 5px #999999;
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 0.9em;
+}
+.user-body p {
+  cursor: pointer;
+  padding-bottom: 0;
+  margin: 0.5em 0;
+  font-size: 1.3em;
+}
+.user-body a {
+  color: #333333;
+  text-decoration: none;
+}
+.user-body p:hover,
+.user-body a:hover {
+  color: #1C94C4;
+}
+.member-cntnr,
+#emailDispatchCntnr,
+#newsletterCntnr {
+  margin-left: 1%;
+}
+#emailDispatchCntnr,
+#newsletterCntnr {
+  margin-right: 1%;
+}
+.member-container {
+  border: 1px solid #aaa;
+  margin: 0 0 10px 10px;
+  position: relative;
+  padding: 0.5em;
+  height: 22em;
+}
+.member-container h1 {
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden;
+}
+.edit {
+  display: none;
+  position: absolute;
+  font-size: 1.5em;
+  right: 0.5em;
+  top: 10em;
+}
+.member-container.owner .edit {
+  display: block;
+}
+#member-edit-template label {
+  font-size: 80%;
+}
+#filter,
+#eMailDispatch,
+#msScheduler-link-button {
+  float: left;
+  margin-right: 5px;
+}
+#filter {
+  margin-left: 20px;
+}
+.user {
+  display: inline;
+  float: right;
+  overflow: hidden;
+}
+.headline {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.headline span {
+  float: right;
+  font-size: 1em;
+  opacity: 0.4;
+}
+.address div {
+  float: left;
+  padding-right: 0.5em;
+}
+div.Aktiv {
+  background: #ccffbb;
+}
+div.MS {
+  background: #ddbb77;
+}
+div.Passiv-m-LV {
+  background: #eebbff;
+}
+div.Passiv-o-LV {
+  background: #ffbbbb;
+}
+div.Ehrenmitglied {
+  background: #ffffbb;
+}
+span.Aktiv {
+  color: #59ff22;
+}
+span.MS {
+  color: #967025;
+}
+span.Passiv-m-LV {
+  color: #c822ff;
+}
+span.Passiv-o-LV {
+  color: #ff2222;
+}
+span.Ehrenmitglied {
+  color: #ffff22;
+}
+.dialog {
+  display: none;
+}
+.no-display {
+  display: none;
+}
+#member-edit-template {
+  height: 278px;
+  margin-top: -5px;
+}
+#member-edit-template .col-cntnr {
+  padding-top: 0.1em;
+}
+.col-cntnr .left-col > div,
+.col-cntnr .right-col > div {
+  padding-top: 0.5em;
+}
+#member-edit-template .col-cntnr .left-col > div,
+#member-edit-template .col-cntnr .right-col > div {
+  padding-top: 0.1em;
+}
+.left-col {
+  border-right: 1px solid #666666;
+  width: 62%;
+  float: left;
+}
+.left-col div {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.right-col {
+  float: left;
+  padding-left: 5px;
+  width: 36%;
+}
+.right-col input {
+  float: right;
+  margin-top: 0;
+}
+.criteria {
+  float: left;
+  margin-top: 0;
+}
+.check-hook {
+  background: url('images/checkmark.png') no-repeat;
+  float: right;
+  height: 20px;
+  width: 20px;
+  display: none;
+  margin-right: 50px;
+}
+.med-dates > div {
+  padding-top: 0.5em;
+  float: left;
+}
+.med-to {
+  padding-left: 1em;
+}
+.newPwd-area .inactive {
+  opacity: 0.4;
+}
+.newPwd-area .container {
+  width: 410px;
+}
+.oldPwd-container,
+.newPwd-container {
+  width: 340px;
+}
+.newPwdRepeat-container {
+  width: 380px;
+}
+.check-hook.newPwd-repeat {
+  margin: 0;
+}
+/*--- Member Form ---*/
+#member-edit-template .membership {
+  position: absolute;
+  right: 1em;
+  top: 13.5em;
+}
+.edit-address div {
+  float: left;
+  padding-right: 0.5em;
+}
+#member-edit-template .street {
+  width: 9em;
+}
+#member-edit-template .plz {
+  width: 4em;
+}
+#member-edit-template .city {
+  width: 9em;
+}
+#member-edit-template .save,
+#member-edit-template .cancel {
+  position: absolute;
+}
+#member-edit-template .cancel {
+  bottom: 0.5em;
+  right: 1em;
+}
+#member-edit-template .save {
+  bottom: 3em;
+  right: 1em;
+}
+#member-edit-template #medFrom,
+#member-edit-template #medTo {
+  width: 7em;
+}
+.name {
+  padding-bottom: 0.1em;
+  float: left;
+}
+.name input {
+  width: 8em;
+}
+#member-edit-template .med-dates > div {
+  padding-top: 0.1em;
+}
+#member-edit-template .right-col {
+  width: 9em;
+}
+#member-edit-template .right-col > div {
+  padding-bottom: 0.2em;
+}
+.ui-dialog-title {
+  font-size: 90%;
+}
+.ui-button {
+  padding: 2px 5px;
+}
+.keine-Angabe {
+  display: none;
+}
+select {
+  padding: 2px 5px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #1c94c4;
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  line-height: normal;
+  margin-right: .1em;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  overflow: visible;
+}
+#member-edit-template div {
+  line-height: 1.5em;
+}
+.ui-dialog .ui-dialog-buttonpane {
+  border-width: 0;
+}
+/*--- eMail Dispatcher ---*/
+#emailDispatchCntnr,
+#newsletterCntnr {
+  display: none;
+  padding-bottom: 10px;
+}
+.email {
+  display: inline;
+}
+.include-email {
+  display: none;
+}
+.email-button,
+span.membership {
+  float: right;
+}
+.email-container {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 0.4em 0;
+}
+.email-container .unspecified-note,
+.email-container .membership {
+  font-size: 25px;
+}
+.email-container .membership {
+  width: 17%;
+}
+.email-container .unspecified-note {
+  width: 21%;
+  padding-left: 2%;
+}
+.email-container .name {
+  max-width: 46%;
+}
+.email-container button {
+  width: 14%;
+  padding: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+.unspecified-note {
+  float: left;
+  font-style: italic;
+}
+.email-container.included {
+  opacity: 1;
+}
+.email-container.excluded span,
+.email-container.unspecified span {
+  opacity: 0.3;
+}
+.email-container.unspecified .email-button {
+  visibility: hidden;
+}
+.email-container button {
+  opacity: 1;
+}
+.dispatch {
+  text-align: right;
+}
+#eMailDispatch,
+#newsletterDispatch {
+  text-align: right;
+}
+#eMailDispatch .img-frame {
+  padding: 5% 3%;
+}
+#newsletterDispatch .img-frame {
+  padding: 5% 3%;
+}
+.img-frame {
+  float: left;
+  height: 1.3em;
+  width: 1.3em;
+}
+.login-header {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/*--- newsletter Dispatcher ---*/
+.newsletter-submit.inactive {
+  cursor: default;
+  opacity: 0.5;
+}
+.newsletter-submit.active {
+  color: #ff0000;
+}
+/*--- forgot pwd ---*/
+.requestNewPwd-cntnr {
+  margin: 1em;
+}
+/* Bootstrap */
+/* xs (phones), sm (tablets), md (desktops), and lg (larger desktops) */
+.addressees-row {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.member-cntnr > .row {
+  width: 100%;
+}
+/* media queries */
+@media (min-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 23px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 9px;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    font-size: 35px;
+  }
+  #member-edit-template .save {
+    bottom: 70px;
+  }
+  .right-col input {
+    float: none;
+  }
+  input[type=checkbox] {
+    position: relative;
+    border: 1px solid #262626;
+    display: inline-block;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 3px;
+  }
+  input[type=checkbox]:active {
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2));
+  }
+  input[type=checkbox]:checked::after {
+    position: absolute;
+    content: '';
+    left: 15%;
+    top: -10%;
+    height: 40%;
+    width: 90%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-box-shadow: -1px 1px 0 rgba(0, 0, 0, 0.8);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+@media (min-width: 993px) {
+  body {
+    font-size: 15px;
+  }
+  .email-container button,
+  .email-container .unspecified-note,
+  .email-container .membership {
+    font-size: 1em;
+  }
+}
+/*
+*Calendar
+*/
+.calendar-cntnr #nav {
+  width: 160px;
+  float: left;
+}
+.calendar-cntnr #dp {
+  margin-left: 160px;
+}
+.hidden {
+  display: none;
+}

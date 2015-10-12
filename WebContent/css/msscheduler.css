@@ -1,0 +1,41 @@
+.dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.time-range-slider-scale {
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+.ui-slider-range {
+    background-color: orange;
+}
+.time-range-slider-scale .hour {
+    width: 5.5%;
+    float: left;
+    padding-left: 3px;
+}
+.time-range-slider-scale .hour:nth-child(odd) {
+    background-color: #ffffff;
+}
+.time-range-slider-occupied {
+    border: 1px solid #cccccc;
+    height: 1.2em;
+    position: relative;
+}
+.occupied-timespan {
+    background-color: #454545;
+    color: white;
+    font-size: 80%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.time-wrapper {
+    padding-right: 1em;
+}
+.fc-event-title {
+    float: right;
+    padding-right: 0.5em;
+}
